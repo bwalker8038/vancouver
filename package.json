@@ -1,0 +1,8 @@
+{ "name" : "Vancouver",
+  "version" : "0.0.1",
+  "dependencies" : { "express",
+                     "dnode",
+                     "jade",
+                     "redis",
+                     "backbone-dnode" }
+}

@@ -2,7 +2,7 @@
 html(lang="en")
   head
   title Messaging App
-    link
+  link
     script(src='/jquery.min.js')
     script(src='/underscore-min.js')
     script(src='/backbone.min.js')
@@ -11,8 +11,9 @@ html(lang="en")
   body
     #header
       h1 Messaging App
-    #wrapper
-      textarea#chatHistory
+    #messageApp
+      .content
+      #create-message
       form(type="post", action="#", name="newMessage", onsubmit="return false")
         input(name="newMessageString", type="text")
         input(type="submit", value="send")
