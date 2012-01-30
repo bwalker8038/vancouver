@@ -13,13 +13,13 @@ var express = require('express'),
 redis.debug_mode = false;
 
 app.configure(function() {
-  app.use(express.bodyParser())
-  app.use(express.cookieParser())
-  app.use(express.methodOverride())
+  app.use(express.bodyParser());
+  app.use(express.cookieParser());
+  app.use(express.methodOverride());
 
-  app.use(express.static(__dirname))
-  app.use(express.static(__dirname + '/../../../node_modules/backbone-dnode/browser/'))
-  app.use(express.static(__dirname + '/static'))
+  app.use(express.static(__dirname));
+  app.use(express.static(__dirname + '/../../../node_modules/backbone-dnode/browser/'));
+  app.use(express.static(__dirname + '/static'));
 
   app.use(express.errorHandler({
     dumpExceptions: true,
@@ -33,7 +33,7 @@ app.set('view options', {
 
 
 app.get('/', function(req,res) {
-  res.render('index.jade')
+  res.render('index.jade');
 });
 
 
@@ -44,9 +44,9 @@ app.listen(8000, function() {
 
 function errorHandler(client, conn) {
   conn.on('error', function(e) {
-    console.log('Conn Error: ', e.stack)
-  })  
-};
+    console.log('Conn Error: ', e.stack);
+  });
+}
 
 
 dnode()
