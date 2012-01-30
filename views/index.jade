@@ -13,7 +13,10 @@ html(lang="en")
       h1 Messaging App
     #messageApp
       .content
-      #create-message
+        #create-message
+          input#new-message(placeholder="what's on your mind?", type-"text")
+          span.ui-tooltip-top Press Enter to post this message
+
       form(type="post", action="#", name="newMessage", onsubmit="return false")
         input(name="newMessageString", type="text")
         input(type="submit", value="send")
