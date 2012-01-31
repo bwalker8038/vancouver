@@ -16,9 +16,8 @@ html(lang="en")
         #create-message
           input#new-message(placeholder="what's on your mind?", type-"text")
           span.ui-tooltip-top Press Enter to post this message
+      #messages
+        ul#message-list
 
-      form(type="post", action="#", name="newMessage", onsubmit="return false")
-        input(name="newMessageString", type="text")
-        input(type="submit", value="send")
     #footer
       p powed by coffee

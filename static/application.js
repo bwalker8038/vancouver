@@ -5,10 +5,10 @@ $(function() {
       url : 'messages',
       type : 'message',
       sync: _.sync,
-      idAttribute: '_id'
+      idAttribute: '_id',
 
       defaults: {
-        content: "What are you thinking...." 
+        content: ''
       },
 
       initialize: function() {
@@ -78,7 +78,7 @@ $(function() {
   });
 
   window.AppView = Backbone.View.extend({
-    el: $("#messageapp"),
+    el: $("#messageApp"),
 
     events: {
       "keypress #new-message": "createOnEnter",

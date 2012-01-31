@@ -1,8 +1,22 @@
-{ "name" : "Vancouver",
+{ 
+  "name" : "Vancouver",
   "version" : "0.0.1",
-  "dependencies" : { "express",
-                     "dnode",
-                     "jade",
-                     "redis",
-                     "backbone-dnode" }
+  "author"  : "Brad Walker <bwalker8038@gmail.com>",
+  "discription" : "A messaging app that utilizes backbone, redis, dnode and express"
+  "contributors" : [
+                     { "name"  : "Brad Walker",
+                       "email" : "Bwalker8038@gmail.com"
+                     }
+                   ],
+                   
+  "dependencies" : { 
+                     "express" : ">= 2.5.x",
+                     "dnode"   : ">= 0.9.x",
+                     "jade"    : ">= 0.2.x",
+                     "redis"   : ">= 0.7.x" ,
+                     "backbone-dnode" : ">= 0.4.x"
+                   },
+  "engine" : {
+               "node" : ">= 0.6.x"
+             }
 }
