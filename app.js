@@ -18,7 +18,7 @@ app.configure(function() {
   app.use(express.methodOverride());
 
   app.use(express.static(__dirname));
-  app.use(express.static(__dirname + '/../../../node_modules/backbone-dnode/browser/'));
+  app.use(express.static(__dirname + '/node_modules/backbone-dnode/browser/'));
   app.use(express.static(__dirname + '/static'));
 
   app.use(express.errorHandler({

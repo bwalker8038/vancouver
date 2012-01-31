@@ -2,7 +2,7 @@
   "name" : "Vancouver",
   "version" : "0.0.1",
   "author"  : "Brad Walker <bwalker8038@gmail.com>",
-  "discription" : "A messaging app that utilizes backbone, redis, dnode and express"
+  "discription" : "A messaging app that utilizes backbone, redis, dnode and express",
   "contributors" : [
                      { "name"  : "Brad Walker",
                        "email" : "Bwalker8038@gmail.com"
